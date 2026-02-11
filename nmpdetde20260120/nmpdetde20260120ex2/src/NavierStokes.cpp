@@ -224,7 +224,8 @@ void NavierStokes::assemble() {
 
           // Pressure mass matrix.
           cell_pressure_mass_matrix(i, j) +=
-              1.0 / mu * fe_values[pressure].value(i, q) *
+              // 1.0 / mu * fe_values[pressure].value(i, q) *
+              delta_t * fe_values[pressure].value(i, q) *
               fe_values[pressure].value(j, q) * fe_values.JxW(q);
         }
 

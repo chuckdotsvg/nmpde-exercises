@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
   const unsigned int degree_pressure = 1;
 
   const unsigned int mu = 1;
-  const double timestep = 0.1;
+  const double timestep = 0.025;
   const double T = 1.0;
   const double theta = 1;
 
